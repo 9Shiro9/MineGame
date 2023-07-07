@@ -31,7 +31,7 @@ function press(obj) {
       gameOverSound();
       gameOverDisplay();
       obj.style.backgroundColor = 'red';
-      obj.innerHTML = 'BOOM';
+      obj.innerHTML = 'BOOM!';
     } else if (
       userPress == p1 ||
       userPress == p2 ||
@@ -69,6 +69,7 @@ function gameOverDisplay() {
   document.getElementById('43').innerHTML = 'V';
   document.getElementById('44').innerHTML = 'E';
   document.getElementById('45').innerHTML = 'R';
+  document.getElementById("button").style.display = "inline-block";
 }
 
 function playClick() {
@@ -99,10 +100,16 @@ function gameWin(obj) {
     document.getElementById('42').innerHTML = 'W';
     document.getElementById('43').innerHTML = 'I';
     document.getElementById('44').innerHTML = 'N';
+    document.getElementById('45').innerHTML = '!';
+    document.getElementById("button").style.display = "inline-block";
   }
 }
 
 function gamewinSound() {
   var audio = document.getElementById('gamewin');
   audio.play();
+}
+
+function reload(){
+  window.location.reload();
 }

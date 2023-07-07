@@ -16,3 +16,36 @@
     height: 50px;
     border: 2px solid gray;
   }
+body {
+  background-color : #FEFCF3;
+  margin-top : 100px;
+  
+}
+
+.button {
+  width : 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: none;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 7px #999;
+}
+
+button:active {
+  background-color: rgb(200, 50, 0);
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
